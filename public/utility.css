@@ -1,0 +1,137 @@
+.flex-box-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flex.box-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-color {
+  background-image: radial-gradient(
+    farthest-corner at 100px 200px,
+    rgb(0, 26, 255),
+    rgb(0, 255, 255)
+  );
+}
+
+.btn-bg-color {
+  background-color: rgb(0, 66, 132);
+}
+
+
+/*-----------------Animination CSS keyframes Start--------------------*/
+@keyframes fade-in{
+  from{
+       opacity: 0;
+      }
+ to{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out{
+  from{
+       opacity: 0;
+      }
+ to{
+    opacity: 1;
+  }
+}
+
+@keyframes ef1 {
+   from{
+         transform: translateX(50px);
+        }
+    to{
+         transform: translateX(0px);
+        }
+      }
+
+@keyframes ef2 {
+        
+        from{
+          transform: translateX(-50px);
+        }
+        to{
+          transform: translateX(0px);
+        }
+}
+
+@keyframes move-up {
+  from{
+         transform: translateY(0px);
+      }
+  to{
+        transform: translateY(10px); 
+    }
+}
+
+@keyframes move-down {
+  from{
+         transform: translateY(20px);
+         opacity: 0;
+      }
+  to{
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+}
+
+
+  /* Event Page */
+@keyframes rorate-right{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scale-in {
+    0%,100%{
+      scale: 1;
+    }
+    50%{
+      scale: 1.15;
+    }
+  }
+
+
+/*-----------------Animination CSS keyframes End--------------------*/
+
+
+/*-----------------Animination Untility Classes--------------------*/
+.fade-in {
+  animation: fade-in 1s ease;
+}
+
+.fade-out {
+  animation: fade-out 1s ease;
+}
+
+.move-left{
+  animation: ef1 1s ease;
+}
+.moveright{
+  animation: ef2 1s ease 0.10s;
+}
+
+.move-up{
+  animation: move-up 1s ease;
+}
+.move-down{
+  animation: move-down 1s ease;
+}
+
+.scale-in{
+  animation: scale-in 1.5s ease 0.50s;
+}
+
+/*-----------------Animination Untility Classes--------------------*/
